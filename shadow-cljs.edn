@@ -1,0 +1,15 @@
+{:deps {:aliases [:dev :frontend]}
+ :nrepl {:port 8777}
+ :dev-http {8080 "resources/public"}
+ :source-paths ["src" "test"]
+ :builds
+ {:app {:target :browser
+        :output-dir "resources/public/js"
+                                        ;:asset-paths
+        :modules {:app {:entries [view-transit.home]
+                        :init-fn view-transit.home/init}}
+        :devtools {:preloads [devtools.preload]}}
+  :test {
+         :target :node-test
+         :output-to "out/node-tests.js"
+         :autorun true}}}

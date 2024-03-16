@@ -1,0 +1,6 @@
+spec.txt
+.shadow-cljs/*
+.lsp/*
+.clj-kondo/*
+.cpcache/*
+node_modules/*
