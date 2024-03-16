@@ -13,4 +13,6 @@ rm yarn.lock &&
 mv resources/public/index.html index.html &&
 mv resources/public/js js &&
 rm -r resources &&
+git add . && 
+git commit -m "release" &&
 git push --force-with-lease origin release
