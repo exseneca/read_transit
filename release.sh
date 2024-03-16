@@ -6,7 +6,6 @@ git branch -D release &&
 git checkout -b release &&
 rm README.md &&
 rm deps.edn &&
-rm -r node_modules &&
 rm package.json &&
 rm -r src &&
 rm shadow-cljs.edn &&
