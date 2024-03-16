@@ -10,6 +10,8 @@ rm package.json &&
 rm -r src &&
 rm shadow-cljs.edn &&
 rm yarn.lock &&
+rm release.sh &&
+rm .gitignore &&
 mv resources/public/index.html index.html &&
 mv resources/public/js js &&
 rm -r resources &&
